@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.wrapper {
+  background: url('./src/images/bg.jpg') no-repeat center center;
+  background-size: cover;
+  height: 800px;
+  display: flex;
+}
+
+@media (max-width: 780px) {
+  .wrapper {
+    height: 1000px;
+  }
+}
+
+.form-section {
+  width: 100%;
+  max-width: 720px;
+  min-height: 630px;
+  background: #343434CC;
+  border-radius: 8px;
+  display: flex;
+  justify-content: start;
+  padding: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.form-control,
+.statusBtn ,
+.phoneBtn{
+  background-color: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid #fff !important;
+  border-radius: 0 !important;
+  color: #fff;
+}
+
+.form-control:focus,
+.statusBtn:focus,
+.phoneBtn:focus{
+  background-color: transparent !important;
+  border-bottom: 2px solid #00bfff !important;
+  box-shadow: none !important;
+  color: #fff;
+  outline: none !important;
+}
+
+
+
+.form-check-input {
+  border: 1px solid black;
+}
+
+.form-check-input:focus {
+  border: 1px solid rgb(113, 42, 139);
+}
+
+
+.form-label {
+  color: #fff;
+  font-weight: 500;
+}
+
+.form-control::placeholder,
+.statusBtn,
+.statusBtn:focus,
+.phoneBtn,
+.phoneBtn:focus {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.form-check-label {
+  font-size: 12px;
+}
+
+.submitBtn {
+  height: 48px;
+  width: 200px;
+  background-color: #6F39AE;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.custom-checkbox {
+  accent-color: white;
+}
+
+.custom-checkbox:active {
+  accent-color: white;
+}
+
+
+.dropdown-arrow {
+  transition: transform 0.3s ease;
+}
+
+.show .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.95);
+  border: none;
+  border-radius: 6px;
+}
+
+
+.dropdown-menu {
+  padding-left: 20px;
+}
+
+.form-check-input[type="checkbox"] {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.form-check-input[type="checkbox"]:checked {
+  border-color: #fff;
+}
+
+.form-check-input[type="checkbox"]:checked::before {
+  color: #000;
+}
+
+.form-check-input[type="radio"]:focus,
+.form-check-input[type="checkbox"]:focus {
+  box-shadow: none;
+}
+
+
+.form-check-input[type="radio"] {
+  border: 1px solid #000000;
+}
+
+.form-check-input[type="radio"]:checked {
+  background-color: #78599C;
+  border-color: #78599C;
+}
+
+
+.language{
+  width: 80px;
+}
+.language:focus{
+  box-shadow: none;
+}
+
+.numberInHeader{
+  font-weight: 700;
+ text-align: center;
+}
+
+.grizlyImg{
+  width: 35px;
+  background: url('./src/images/grizly.png') no-repeat center center;
+  background-size: contain;
+
+}
+
+.grizly{
+  display: flex;
+  justify-self: end;
+}
+
+.text-purple{
+  color: #7A5B9E;
+}
+
+.phone-wrapper .form-label {
+  font-weight: 500;
+  color: #fff;
+}
+
+
+.flag-circle span {
+  font-size: 20px;
+}
+
+.phone-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  flex-grow: 1;
+}
+
+.country-select {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.bold{
+  font-weight: 700;
+}
+
+.gray{
+color: #BCBCBC;
+}
+
+
+.bigImage{
+  width: 660px ;
+  height: 560px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width: 500px) {
+  .bigImage {
+    width: 300px; 
+    height: auto;
+    
+  }
+}
+
+.imgCur {
+  height: 104px;
+  width: 232px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.imgClients {
+  max-height: 48px;
+}
+
+.imgHeight {
+  max-height: 90px;
+}
+
+.btn-submit.btn-inactive {
+  background-color: #b19cd9; 
+}
+
+.btn-submit.btn-active {
+  background-color: #8000ff; 
+}
+
+#about {
+  max-height: calc(1.5em * 7); 
+}
+
