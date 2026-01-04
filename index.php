@@ -1,5 +1,5 @@
 <?php
-$dbFile = __DIR__ . "/src/dbFromForm.db";
+$dbFile = __DIR__ . "/src/db.db";
 
 try {
     $pdo = new PDO("sqlite:" . $dbFile);
